@@ -1,7 +1,6 @@
 class CodexFlow < Formula
   desc "Intelligent, Efficient, Adaptive Multi-Agent Strategy Orchestration for Codex"
   homepage "https://github.com/ParsifalC/codex-flow"
-  version "2.1.13"
 
   on_macos do
     if Hardware::CPU.arm?
@@ -27,7 +26,8 @@ class CodexFlow < Formula
     libexec.install Dir["*"]
     bin.write_exec_script libexec/"bin/codex-flow"
     bin.write_exec_script libexec/"bin/codex-flow-mcp"
-    bash_completion.install libexec/"completions/codex-flow.bash" => "codex-flow" if (libexec/"completions/codex-flow.bash").exist?
+    completion = libexec/"completions/codex-flow.bash"
+    bash_completion.install completion => "codex-flow" if completion.exist?
   end
 
   def caveats
@@ -41,6 +41,6 @@ class CodexFlow < Formula
   end
 
   test do
-    assert_match "codex-flow", shell_output("#{bin}/codex-flow --help", 0)
+    assert_match "codex-flow", shell_output("#{bin}/codex-flow --help")
   end
 end
