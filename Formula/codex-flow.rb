@@ -1,25 +1,25 @@
 class CodexFlow < Formula
   desc "Intelligent, Efficient, Adaptive Multi-Agent Strategy Orchestration for Codex"
   homepage "https://github.com/ParsifalC/codex-flow"
-  version "2.1.11"
+  version "2.1.12"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.11/codex-flow-2.1.11-darwin-arm64.tar.gz"
-      sha256 "1a76cfd415b5b4115a82af472745903a6e5aaef7ad6aecf0b001a13a76e79caa"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.12/codex-flow-2.1.12-darwin-arm64.tar.gz"
+      sha256 "c889c8ca71d5dfbc0997ee8ea9052688801193dc0814119b51f4aa0f085862ba"
     else
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.11/codex-flow-2.1.11-darwin-x86_64.tar.gz"
-      sha256 "766885ac040cacf35ca663b18726a487ec51a1f3fdf3eedd9add2639c3c47761"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.12/codex-flow-2.1.12-darwin-x86_64.tar.gz"
+      sha256 "9e283b10451a58461fb31a0b119ae771484474a5e120f5ea6cb428f7331bc62c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.11/codex-flow-2.1.11-linux-arm64.tar.gz"
-      sha256 "9e349d48b1ac7cd75bc41d38db26c80c5ad0cb9663a18eb4f6949d1ba87e8167"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.12/codex-flow-2.1.12-linux-arm64.tar.gz"
+      sha256 "1760c17aada31a90cdbd94dd27fd3a91739c3ff74010594a0d06212042aea3c1"
     else
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.11/codex-flow-2.1.11-linux-x86_64.tar.gz"
-      sha256 "68651d9c83ad872a127aff9a5791d9352556b25ab7829649b86b61f7d99d422c"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.12/codex-flow-2.1.12-linux-x86_64.tar.gz"
+      sha256 "93ce8d39eed7cb8482dff02e04f512f93468cdf8c81b744e835d055db439d88f"
     end
   end
 
