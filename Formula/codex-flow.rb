@@ -4,21 +4,21 @@ class CodexFlow < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.13/codex-flow-2.1.13-darwin-arm64.tar.gz"
-      sha256 "8ef4e634b1c33425b465ea3b14b9cb0e779c20207efbea1e8c12f1c20d24c3af"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.14/codex-flow-2.1.14-darwin-arm64.tar.gz"
+      sha256 "98ae753dba9f961fa40946e205d89b948343d871003048b314f4beca2ce4c15c"
     else
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.13/codex-flow-2.1.13-darwin-x86_64.tar.gz"
-      sha256 "4b0336f3b649185b216d021d871dcde6088431b21c2f6fa8eb03bdf66b703843"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.14/codex-flow-2.1.14-darwin-x86_64.tar.gz"
+      sha256 "e1554847950b7a27eea69ac4fc903955db93cc8d59e6e5757a5a91f48ac5ce22"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.13/codex-flow-2.1.13-linux-arm64.tar.gz"
-      sha256 "e008c3af44fe6b154e28d0bc1889e28c0c87c99819203973928635fbc07cebcf"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.14/codex-flow-2.1.14-linux-arm64.tar.gz"
+      sha256 "b85466c4e1f9187ad1fac03622b268a087d167c8910cdc9625a0feb0b4029a03"
     else
-      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.13/codex-flow-2.1.13-linux-x86_64.tar.gz"
-      sha256 "f57ee3f1ea4a17ef67ba7c3a49143532bc2867f0641b82fa562f13d1f21cca0b"
+      url "https://github.com/ParsifalC/codex-flow/releases/download/v2.1.14/codex-flow-2.1.14-linux-x86_64.tar.gz"
+      sha256 "c20100b9b203888537545042d7e93b8ea403cfc3126b41f2cefac47442114c78"
     end
   end
 
